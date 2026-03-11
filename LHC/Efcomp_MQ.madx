@@ -3,6 +3,9 @@
 
  Efcomp_measured_MQ(cellnumber,leri,ipnumber,inout) : macro = {
 
+ yrotangle = 0;
+ srotangle = 0;
+
  if (mylhcbeam < 2 && inout == 1) { exec, Set_Quadru_Mult(mq.cellnumberleriipnumber.b1, mq.cellnumberleriipnumber.v1); };
  if (mylhcbeam < 2 && inout == 2) { exec, Set_Quadru_Mult(mq.cellnumberleriipnumber.b1, mq.cellnumberleriipnumber.v2); };
 

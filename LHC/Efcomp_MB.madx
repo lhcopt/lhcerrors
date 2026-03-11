@@ -1,6 +1,8 @@
 ! written on 03/01/06 13:06:28 by T.Risselada
 
  Efcomp_measured_MB(letter,cellnumber,leri,ipnumber,inout) : macro = {
+   yrotangle = 0;
+   srotangle = 0;
    if (mylhcbeam < 2) {exec, Set_Dipole_Mult(mb.lettercellnumberleriipnumber.b1, mb.lettercellnumberleriipnumber.vinout); };
    if (mylhcbeam > 1) {exec, Set_Dipole_Mult(mb.lettercellnumberleriipnumber.b2, mb.lettercellnumberleriipnumber.vinout); };
      };
